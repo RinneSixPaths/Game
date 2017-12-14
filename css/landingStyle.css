@@ -1,0 +1,137 @@
+body {
+    background-image: url(../img/back.png);
+    background-attachment: fixed;
+}
+
+.content-container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.main-logo {
+    font-family: 'Open Sans', sans-serif;
+    color: #d1aaff;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffa5a5;
+    padding: 0px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    text-shadow: 1px 1px 2px black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.here-play {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.here-play:hover {
+    color: #8000ff;
+    font-size: 2.5em;
+}
+
+.start-p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.start-container {
+    margin: 0 auto;
+    height: 80px;
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.about-title {
+    
+}
+
+.info-container {
+    height: 600px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.about-title {
+    font-size: 1.5em;
+}
+
+.screens-container {
+    margin: 0 auto;
+    height: 1000px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.screenshots {
+    font-size: 1.5em;
+}
+
+.screen-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
