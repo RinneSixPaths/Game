@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Win</title>
+    <script src="./src/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/pageStyle.css">
+    <style>
+        body {
+            background-image: url(./img/back4.png);
+            background-attachment: fixed;
+        }  
+    </style>
+  </head>
+
+  <body>
+    <div class="content-container">
+         <img width="200" height="200" src="./img/win.png" alt="">
+         <h1 id='game-done' class="game-done"></h1>
+        <button type="submit" id="restart" class="start-but">AGAIN</button>
+      </div>
+      <script>
+          let nick = localStorage.getItem('currentPlayer');
+          if (nick) {
+              let text = 'Congratulations, '+nick+'! you won!';
+            $('#game-done').text(text);
+          }
+          $('#restart').click(() => {location.replace('lost.html');});
+          document.getElementsByClassName('content-container')[0].style.marginTop = (window.innerHeight/2 - 200) + 'px';
+          $(window).resize(() => {
+                location.reload();
+          });
+      </script>
+  </body>
+</html>

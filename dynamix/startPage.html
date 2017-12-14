@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Start</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pageStyle.css">
+    <script src="./src/jquery-3.1.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="content-container">
+        <img width="200" height="200" src="./img/player.png" alt="">
+        <input type="text" id="nickname" placeholder="Nickname">
+        <button type="submit" id='start' class="start-but">LOG IN</button>
+    </div>
+      <script>
+        let playerNick;
+        $('#start').click(() => {
+            if ($('#nickname').val()) {
+                let nickName = $('#nickname').val();
+                console.log(nickName);
+                if (localStorage.getItem(nickName)) {
+                    localStorage.setItem('currentPlayer', nickName);
+                    playerNick = nickName;
+                    location.replace('lost.html');
+                } else {
+                    localStorage.setItem('currentPlayer', nickName);
+                    localStorage.setItem(nickName, 0);
+                    playerNick = nickName;
+                    location.replace('lost.html');
+                }
+
+            } else {
+                alert('Nickname is required');
+            }
+        });
+        document.getElementsByClassName('content-container')[0].style.marginTop = (window.innerHeight/2 - 200) + 'px';
+          $(window).resize(() => {
+                location.reload();
+          });
+      </script>
+  </body>
+</html>

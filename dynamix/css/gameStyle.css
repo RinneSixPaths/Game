@@ -1,0 +1,13 @@
+#canvas {
+    background-image: url(../img/16.png);
+}
+
+html, body { width:100%; height:100%; }
+
+canvas { 
+    display:block; position: absolute; 
+}
+
+#monster-canvas {
+    z-index: 100;
+}

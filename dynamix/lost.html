@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lost</title>
+    <link rel="stylesheet" href="css/pageStyle.css">
+    <script src="./src/jquery-3.1.1.min.js"></script>
+    <style>
+        body {
+            background-image: url(./img/back3.png);
+            background-attachment: fixed;
+        }  
+    </style>
+  </head>
+
+  <body>
+    <div class="content-container">
+         <img width="200" height="200" src="./img/logo.png" alt="">
+         <h id='your-time' class='your-time'></h>
+          <button type="submit" id="start" class="start-but">PLAY</button>
+          <button type="submit" id="startPage" class="start-but">START PAGE</button>
+    </div>
+      
+      <script>
+          let nick = localStorage.getItem('currentPlayer'),
+              time = localStorage.getItem(nick) == 450000 ? 'GAME COMPLETED!' : localStorage.getItem(nick);
+          if (nick) {
+              let text = 'Hello, '+nick+'! Your best result is: '+time;
+            $('#your-time').text(text);
+          }
+          $('#start').click(() => {location.replace('player.html');});
+          $('#startPage').click(() => {location.replace('startPage.html');});
+          document.getElementsByClassName('content-container')[0].style.marginTop = (window.innerHeight/2 - 200) + 'px';
+          $(window).resize(() => {
+                location.reload();
+          });
+      </script>
+  </body>
+</html>
