@@ -10,7 +10,7 @@ const AUDIO_URL = 'https://api.soundcloud.com/tracks/216640012/stream?client_id=
       BPM = 87.5,
       WALL_INDX = 4,
       RESERVE_INDX = 3,
-      VICTORY_TIME = 450000,
+      VICTORY_TIME = 291000,
       typesOfFlight = [{type: 'CIRCLE-FLIGHT', min: 5, max: 20},
                       {type: 'SINGLE_FLIGHT', min: 1, max: 1},
                       {type: 'TRIPLE_FLIGHT', min: 18, max: 18},
