@@ -5,6 +5,7 @@ input-placeholder {
 body {
     background-image: url(../img/back2.png);
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .content-container {
