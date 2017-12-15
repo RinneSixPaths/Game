@@ -145,6 +145,11 @@ export default class Player {
             width = isTranslated ? this.canvas.width/2 : 0,
             height = isTranslated ? this.canvas.height/2 : 0;
         if (line <= this.width + monster.radius - monsterHornsSize) {
+            let nickName = localStorage.getItem('currentPlayer'),
+                deathTime = Date.now() - startTime;
+            if (deathTime > localStorage.getItem(nickName)) {
+                localStorage.setItem(nickName, deathTime);
+            }
             location.replace('lost.html');
         }
         if (particles) {
