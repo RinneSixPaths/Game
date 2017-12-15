@@ -104,7 +104,7 @@ const AUDIO_URL = 'https://api.soundcloud.com/tracks/216640012/stream?client_id=
       BPM = 87.5,
       WALL_INDX = 4,
       RESERVE_INDX = 3,
-      VICTORY_TIME = 450000,
+      VICTORY_TIME = 291000,
       typesOfFlight = [{type: 'CIRCLE-FLIGHT', min: 5, max: 20},
                       {type: 'SINGLE_FLIGHT', min: 1, max: 1},
                       {type: 'TRIPLE_FLIGHT', min: 18, max: 18},
@@ -439,6 +439,11 @@ class Player {
             width = isTranslated ? this.canvas.width/2 : 0,
             height = isTranslated ? this.canvas.height/2 : 0;
         if (line <= this.width + __WEBPACK_IMPORTED_MODULE_0__mainActions_js__["monster"].radius - monsterHornsSize) {
+            let nickName = localStorage.getItem('currentPlayer'),
+                deathTime = Date.now() - __WEBPACK_IMPORTED_MODULE_0__mainActions_js__["startTime"];
+            if (deathTime > localStorage.getItem(nickName)) {
+                localStorage.setItem(nickName, deathTime);
+            }
             location.replace('lost.html');
         }
         if (particles) {
