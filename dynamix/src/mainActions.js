@@ -3,7 +3,7 @@ import Monster from './classes/monster.js';
 import ConfigController from './classes/configController.js';
 import $ from './jquery-3.1.1.min.js';
 
-const AUDIO_URL = 'https://api.soundcloud.com/tracks/216640012/stream?client_id=8df0d68fcc1920c92fc389b89e7ce20f',
+const AUDIO_URL = 'https://api.soundcloud.com/tracks/41668816/stream?client_id=8df0d68fcc1920c92fc389b89e7ce20f',
       CLIENT_ID = "8df0d68fcc1920c92fc389b89e7ce20f",
       PLAYER_ICON = './img/player1.png',
       MONSTER_ICON = './img/demon.png',
