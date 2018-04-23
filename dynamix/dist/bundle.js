@@ -97,7 +97,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-const AUDIO_URL = 'https://api.soundcloud.com/tracks/216640012/stream?client_id=8df0d68fcc1920c92fc389b89e7ce20f',
+const AUDIO_URL = 'https://api.soundcloud.com/tracks/41668816/stream?client_id=8df0d68fcc1920c92fc389b89e7ce20f',
       CLIENT_ID = "8df0d68fcc1920c92fc389b89e7ce20f",
       PLAYER_ICON = './img/player1.png',
       MONSTER_ICON = './img/demon.png',
@@ -286,6 +286,7 @@ __WEBPACK_IMPORTED_MODULE_3__jquery_3_1_1_min_js___default()(document).keyup((e)
     } 
 });
 
+
 /***/ }),
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -473,6 +474,7 @@ class Player {
     }
 }
 /* harmony export (immutable) */ __webpack_exports__["a"] = Player;
+
 
 
 /***/ }),
